@@ -36,5 +36,5 @@ For Parallel Test Execution -> Go to the test -> java -> Run Testing.xml file (y
 ![image](https://user-images.githubusercontent.com/64305836/146672962-9dbed623-a75e-45eb-95eb-76167e0e609a.png)
 
 
-If you face any issue please mail me on sanketchaudhary1412@gmail.com
+If you face any issue please email me on sanketchaudhary1412@gmail.com or connect me on whats app +917757931216
 
