@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WeatherShopper" parallel="classes" thread-count="2">
+    <parameter name="browser" value="Chrome" />
+    <listeners>
+        <listener class-name="TestListener.TestListener" />
+    </listeners>
+    <test name="testngTest">
+        <classes>
+            <class name="TestCases.TestWeatherShopper" />
+            <class name="TestCases.TestWeatherShopperDuplicate"></class>
+            <class name="TestCases.TestWeatherShopperDuplicate1"></class>
+            <class name="TestCases.TestWeatherShopperDuplicate2"></class>
+        </classes>
+    </test>
+</suite>
