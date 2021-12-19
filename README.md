@@ -28,9 +28,11 @@ Utility Folder -> It Contains Listner class, WebDriver manager class and Extent 
 
 
 For single Test Execution -> Go to the test -> java -> TestCase -> Select any test class -> Modify @Optional("browser type") to set browser type eg. Firefox and Chrome
+
 ![image](https://user-images.githubusercontent.com/64305836/146672852-30b4c045-8fda-43c2-a893-ced0cdaf900b.png)
 
 For Parallel Test Execution -> Go to the test -> java -> Run Testing.xml file (you can do crossbrowser execution by changing browser value in file and u can set Thread count)
+
 ![image](https://user-images.githubusercontent.com/64305836/146672962-9dbed623-a75e-45eb-95eb-76167e0e609a.png)
 
 
