@@ -4,24 +4,28 @@ import ActionPage.CheckoutPage;
 import ActionPage.HomePage;
 import ActionPage.PaymentSuccessPage;
 import ActionPage.ProductPage;
+import BaseTest.BaseTest;
 import WebDriverManager.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
-public class TestWeatherShopperDuplicate2 {
+public class TestWeatherShopperDuplicate2 extends BaseTest {
+
     HomePage homePage;
     ProductPage productPage;
     CheckoutPage checkoutPage;
     PaymentSuccessPage paymentSuccessPage;
     private ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
+    String email = "Test"+ random3DigitGenerator()+"@test.com";
+    String cardNumber = "4242424242424242";
+    String date ="1230";
+    String cvc = random3DigitGenerator()+"";
+    String zipCode = random3DigitGenerator() +""+random3DigitGenerator();
 
     @BeforeMethod()
     @Parameters("browser")
-    public void methodSetup(String browser){
+    public void methodSetup(@Optional("Firefox") String browser){
         driver.set(WebDriverManager.startBrowser(browser));
         homePage = new HomePage(driver.get());
         productPage = new ProductPage(driver.get());
@@ -94,7 +98,7 @@ public class TestWeatherShopperDuplicate2 {
         checkoutPage.clickOnPayWithCardButton();
 
         //Add Payment Details in Payment Popup
-        checkoutPage.addCardDetails("Testing@gmla.com","4242424242424242","1230","123","123456");
+        checkoutPage.addCardDetails(email,cardNumber,date,cvc,zipCode);
 
         //Assert Total Amount in pay button
         Assert.assertTrue(checkoutPage.paymentButton.getText().contains((productPrize1+productPrize2)+".00"));
@@ -110,4 +114,3 @@ public class TestWeatherShopperDuplicate2 {
         driver.get().quit();
     }
 }
-
