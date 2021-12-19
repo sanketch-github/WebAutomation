@@ -7,6 +7,7 @@ File folder structure are as below image
 ![image](https://user-images.githubusercontent.com/64305836/146672604-68df167e-3b24-4211-9caa-d091ea36e348.png)
 
 Test Folder -> It Contains BestTest class and Test Case Class.
+
 BaseTest: This is Base class of test class which have methods like before suite after suite and this class is extened in test classes
 Test Case Folder: it has all test script created for test
 
@@ -21,6 +22,7 @@ Test Result Folder-> It Contains the test result html file
 ![image](https://user-images.githubusercontent.com/64305836/146672710-acdd32ac-8977-4b99-8b4b-c81819647e61.png)
 
 Ui-helper Folder -> It Contains Action Pages, Locator Pages and Base Page
+
 Locator Pages: This folder contains all Locator Pages which is mainly created for storing locators.
 Action Pages: This folder contains all action page class which mainly created for defining action in to methods and extends its locator page
 Base Page: this class contain all common reusble methods eg Selenium Wait wrapper method 
