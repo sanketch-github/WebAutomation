@@ -7,18 +7,23 @@ File folder structure are as below image
 ![image](https://user-images.githubusercontent.com/64305836/146672604-68df167e-3b24-4211-9caa-d091ea36e348.png)
 
 Test Folder -> It Contains BestTest class and Test Case Class.
+
 ![image](https://user-images.githubusercontent.com/64305836/146672667-0ff77d3c-b05f-4963-9f05-7f50d1242e61.png)
 
 Test Data Folder -> It Contains Firefox and Chrome Driver
+
 ![image](https://user-images.githubusercontent.com/64305836/146672681-c6f896ab-b4f4-4bb8-b5e3-dac8c4d44650.png)
 
 Test Result Folder-> It Contains the test result html file
+
 ![image](https://user-images.githubusercontent.com/64305836/146672710-acdd32ac-8977-4b99-8b4b-c81819647e61.png)
 
 Ui-helper Folder -> It Contains Action Pages, Locator Pages and Base Page
+
 ![image](https://user-images.githubusercontent.com/64305836/146672745-bc5f713d-a645-41ea-9c0d-6737f356b54e.png)
 
 Utility Folder -> It Contains Listner class, WebDriver manager class and Extent Report Class
+
 ![image](https://user-images.githubusercontent.com/64305836/146672783-6d974f07-603b-47b6-8c13-532bdfc08433.png)
 
 
