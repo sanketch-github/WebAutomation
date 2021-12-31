@@ -5,7 +5,7 @@ import ActionPage.HomePage;
 import ActionPage.PaymentSuccessPage;
 import ActionPage.ProductPage;
 import BaseTest.BaseTest;
-import WebDriverManager.WebDriverManager;
+import WebDriverManager.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -26,7 +26,7 @@ public class TestWeatherShopperDuplicate1 extends BaseTest {
     @BeforeMethod()
     @Parameters("browser")
     public void methodSetup(@Optional("Firefox") String browser){
-        driver.set(WebDriverManager.startBrowser(browser));
+        driver.set(DriverManager.startBrowser(browser));
         homePage = new HomePage(driver.get());
         productPage = new ProductPage(driver.get());
         checkoutPage =new CheckoutPage(driver.get());
