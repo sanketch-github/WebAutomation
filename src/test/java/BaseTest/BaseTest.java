@@ -2,6 +2,8 @@ package BaseTest;
 
 import org.testng.annotations.*;
 
+import java.util.Random;
+
 public class BaseTest {
     @BeforeSuite()
     public void suiteSetup(){
@@ -19,5 +21,10 @@ public class BaseTest {
     @AfterSuite()
     public void suiteCleanup(){
         //add log4j
+    }
+
+    public int random3DigitGenerator(){
+        Random random = new Random();
+        return random.nextInt(900) + 100;
     }
 }

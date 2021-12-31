@@ -17,6 +17,11 @@ public class TestWeatherShopper extends BaseTest {
     CheckoutPage checkoutPage;
     PaymentSuccessPage paymentSuccessPage;
     private ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
+    String email = "Test"+ random3DigitGenerator()+"@test.com";
+    String cardNumber = "4242424242424242";
+    String date ="1230";
+    String cvc = random3DigitGenerator()+"";
+    String zipCode = random3DigitGenerator() +""+random3DigitGenerator();
 
     @BeforeMethod()
     @Parameters("browser")
@@ -93,7 +98,7 @@ public class TestWeatherShopper extends BaseTest {
         checkoutPage.clickOnPayWithCardButton();
 
         //Add Payment Details in Payment Popup
-        checkoutPage.addCardDetails("Testing@gmla.com","4242424242424242","1230","123","123456");
+        checkoutPage.addCardDetails(email,cardNumber,date,cvc,zipCode);
 
         //Assert Total Amount in pay button
         Assert.assertTrue(checkoutPage.paymentButton.getText().contains((productPrize1+productPrize2)+".00"));
