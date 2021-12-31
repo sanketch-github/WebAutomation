@@ -33,7 +33,6 @@ public class ProductPage extends ProductLocatorPage {
 
     public String addProductLowestPrizeContainName(String text){
         scrollDown();
-        sleep(2);
         String productNameText="";
         int productPrize = 5000;
 

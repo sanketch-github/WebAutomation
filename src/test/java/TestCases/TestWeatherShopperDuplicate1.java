@@ -4,7 +4,7 @@ import ActionPage.CheckoutPage;
 import ActionPage.HomePage;
 import ActionPage.PaymentSuccessPage;
 import ActionPage.ProductPage;
-import WebDriverManager.WebDriverManager;
+import WebDriverManager.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -22,7 +22,7 @@ public class TestWeatherShopperDuplicate1 {
     @BeforeMethod()
     @Parameters("browser")
     public void methodSetup(String browser){
-        driver.set(WebDriverManager.startBrowser(browser));
+        driver.set(DriverManager.startBrowser(browser));
         homePage = new HomePage(driver.get());
         productPage = new ProductPage(driver.get());
         checkoutPage =new CheckoutPage(driver.get());

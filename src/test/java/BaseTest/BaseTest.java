@@ -5,19 +5,19 @@ import org.testng.annotations.*;
 public class BaseTest {
     @BeforeSuite()
     public void suiteSetup(){
-        System.out.println("in before suite");
+        //add log4j
     }
     @BeforeClass()
     public void setup(){
-        System.out.println("in before class");
+        //add log4j
     }
 
     @AfterClass()
     public void cleanup(){
-        System.out.println("in after class");
+        //add log4j
     }
     @AfterSuite()
     public void suiteCleanup(){
-        System.out.println("in after suite");
+        //add log4j
     }
 }

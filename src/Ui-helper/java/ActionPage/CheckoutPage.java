@@ -28,7 +28,6 @@ public class CheckoutPage extends CheckoutLocatorPage {
     }
 
     public void addCardDetails(String email,String cardNumber,String date,String cvc,String zipCode) {
-        sleep(5);
         driver.switchTo().frame(0);
         sendKeyInField(paymentPopUpEmailTextTestField, email);
         sendKeyInField(paymentPopUpCardTextField, cardNumber);
